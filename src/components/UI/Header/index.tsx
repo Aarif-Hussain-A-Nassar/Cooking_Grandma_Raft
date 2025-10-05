@@ -12,7 +12,7 @@ import {
 } from "./styles";
 import raft_logo from "../../../../public/svgs/raft_logo.svg";
 import ic_bars from "../../../../public/svgs/ic_bars.svg";
-import { GetStartedButton } from "@/components";
+import ContactUsButton from "@/components/Common/ContactUsButton";
 import AnimatedLink from "@/components/Common/AnimatedLink";
 import coconut from "../../../../public/svgs/coconut.svg";
 import Logo from "../../../../public/svgs/Logo.svg";
@@ -42,14 +42,14 @@ const Header = () => {
             <Image src={ic_bars} alt="bars" />
           </BurgerMenu>
         </LogoContainer>
+
         <Nav className={isOpen ? "active" : ""}>
           {links.map((link, i) => (
             <AnimatedLink key={i} title={link.linkTo} />
           ))}
         </Nav>
         <CallToActions className={isOpen ? "active" : ""}>
-          <AnimatedLink title="Login" />
-          <GetStartedButton padding="0.5rem 0.75rem" />
+          <ContactUsButton padding="0.5rem 0.75rem" />
         </CallToActions>
       </Inner>
     </Wrapper>

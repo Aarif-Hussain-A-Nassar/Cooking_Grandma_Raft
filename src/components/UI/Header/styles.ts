@@ -38,7 +38,7 @@ export const BurgerMenu = styled.div`
 
     div {
       position: absolute;
-      background: var(--emerald);
+      background: #fe4d43;
       width: "250px";
       height: "300px";
       border-radius: 25px;
