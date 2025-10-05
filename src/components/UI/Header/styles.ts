@@ -43,8 +43,7 @@ export const BurgerMenu = styled.div`
       height: "300px";
       border-radius: 25px;
       z-index: 1;
-      top: 50px;
-    }
+      top: 50px;}
 
     img {
       position: relative;

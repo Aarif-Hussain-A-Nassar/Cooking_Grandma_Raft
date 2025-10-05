@@ -48,7 +48,7 @@ const Header = () => {
             <AnimatedLink key={i} title={link.linkTo} />
           ))}
         </Nav>
-        <CallToActions className={isOpen ? "active" : ""}>
+        <CallToActions className="desktop-only">
           <ContactUsButton padding="0.5rem 0.75rem" />
         </CallToActions>
       </Inner>
